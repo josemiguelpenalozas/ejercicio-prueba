@@ -78,4 +78,5 @@ while True:
         print("presione cualquier tecla para continuar")
         msvcrt.getch()      
     else:
+        print("Adios")
         break
