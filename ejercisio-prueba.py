@@ -46,7 +46,11 @@ while True:
         msvcrt.getch()
 
     elif opcion==2:
-        print(matriz)
+        i=0
+        while i<len(matriz):
+            print(matriz[i])
+            i=i+1
+
         print("presione cualquier tecla para continuar")
         msvcrt.getch()
 
@@ -69,6 +73,9 @@ while True:
                     archivo.write(str(matriz[i][5]))
                     archivo.write("\n")
             i=i+1
-                 
+        os.system("cls")
+        print("Archivo creado con exito")
+        print("presione cualquier tecla para continuar")
+        msvcrt.getch()      
     else:
         break
